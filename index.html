@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°F</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <span class="days-of-week">MON</span> <br />
+                <span class="emoji">🌤️</span><br />
+                <strong>86°</strong> 76°
+              </div>
+              <div class="col-2">
+                <span class="days-of-week">TUE</span> <br />
+                <span class="emoji">🌤️</span> <br/ > <strong>86°</strong> 74°
+              </div>
+              <div class="col-2">
+                <span class="days-of-week">WED</span> <br />
+                <span class="emoji">⛈️</span> <br/ > <strong>86°</strong> 73°
+              </div>
+              <div class="col-2">
+                <span class="days-of-week">THU</span><br />
+                <span class="emoji">⛈️</span> <br/ > <strong>84°</strong> 73°
+              </div>
+              <div class="col-2">
+                <span class="days-of-week">FRI</span> <br />
+                <span class="emoji">⛈️</span> <br />
+                <strong>85°</strong> 73°
+              </div>
+            </div>
+          </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+          
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
